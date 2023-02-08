@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Clientes extends Model
 {
+    use \Illuminate\Database\Eloquent\Factories\HasFactory;
 
     protected $table = 'clientes';
 
@@ -14,7 +15,7 @@ class Clientes extends Model
     protected $fillable = [
         'foto',
         'nome',
-        'nome_mãe',
+        'nome_mae',
         'data_nascimento',
         'cpf',
         'cns'
